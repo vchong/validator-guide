@@ -1,6 +1,6 @@
 # Sommelier v4.0.1 Upgrade
 
-The Upgrade is scheduled for block `3610000`.
+The upgrade is scheduled for block `3610000`.
 
 This guide assumes that you use cosmovisor to manage upgrades
 
