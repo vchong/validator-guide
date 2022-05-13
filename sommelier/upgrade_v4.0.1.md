@@ -6,8 +6,6 @@ This guide assumes that you use cosmovisor to manage upgrades
 
 ```bash
 # get the new version
-hello
-
 wget https://github.com/PeggyJV/sommelier/releases/download/v4.0.1/sommelier_4.0.1_linux_amd64.tar.gz
 tar -xf sommelier_4.0.1_linux_amd64.tar.gz
 sudo mv sommelier /usr/bin
