@@ -1,4 +1,4 @@
-# Sifchain v4.0.1 Upgrade
+# Sommelier v4.0.1 Upgrade
 
 The Upgrade is scheduled for block `3610000`.
 
