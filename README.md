@@ -1,3 +1,7 @@
-# Polkachu Validator Upgrade Guides
+# Polkachu Upgrade Guides and Cli Command Cheat Sheet
 
-See https://polkachu.com/chain_upgrades
+This repo is mostly for Polkachu team's internal consumption, but other users might find it helpful so we have made it public.
+
+## For upcoming chain upgrades, see:
+
+https://polkachu.com/chain_upgrades
