@@ -49,14 +49,16 @@ swagger = true # Or false if no swagger is preferred
 
 ## Polkachu's Testnet Setup
 
-| Network  | Custom Port |
+Legacy
+
+| Network  | Port Prefix |
 | -------- | ----------- |
 | Celestia | 33          |
 | Deweb    | 28          |
 
-New Attempt
+Canonical
 
-| Network     | Custom Port |
+| Network     | Port Prefix |
 | ----------- | ----------- |
 | Kyve        | 10          |
 | Quicksilver | 11          |
