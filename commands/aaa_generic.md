@@ -20,10 +20,10 @@ BINARY tx staking create-validator \
     --security-contact "hello@polkachu.com"
 ```
 
-kujirad tx staking create-validator \
- --amount="9000000ukuji" \
+terrad tx staking create-validator \
+ --amount="9000000000ukuji" \
  --pubkey=$(kujirad tendermint show-validator) \
- --chain-id="harpoon-1" \
+ --chain-id="harpoon-3" \
  --from="kujira_test" \
  --node="http://localhost:18657" \
  --commission-max-change-rate "0.05" \
@@ -31,6 +31,22 @@ kujirad tx staking create-validator \
  --commission-rate "0.05" \
  --min-self-delegation "1" \
  --moniker "polkachu.com" \
+ --website "https://polkachu.com" \
+ --identity "0A6AF02D1557E5B4" \
+ --details "Polkachu is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@polkachu.com" \
+ --security-contact "hello@polkachu.com"
+
+Gentx
+
+terrad gentx polkachu_terra 1000000uluna \
+ --chain-id="phoenix-1" \
+ --pubkey=$(terrad tendermint show-validator) \
+ --min-self-delegation="1"\
+ --commission-max-change-rate "0.05" \
+ --commission-max-rate "0.10" \
+ --commission-rate "0" \
+ --min-self-delegation "1" \
+ --moniker " polkachu.com" \
  --website "https://polkachu.com" \
  --identity "0A6AF02D1557E5B4" \
  --details "Polkachu is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@polkachu.com" \
