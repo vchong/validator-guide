@@ -24,13 +24,13 @@ osmosisd version --long
 # Copy binary
 
 ```bash
-mkdir -p $HOME/.osmosis/cosmovisor/upgrades/v9/bin
-cp $HOME/go/bin/osmosisd $HOME/.osmosis/cosmovisor/upgrades/v9/bin
+mkdir -p $HOME/.osmosisd/cosmovisor/upgrades/v9/bin
+cp $HOME/go/bin/osmosisd $HOME/.osmosisd/cosmovisor/upgrades/v9/bin
 ```
 
 # check the version again
 
 ```bash
 # should be 9.0.0
-$HOME/.osmosis/cosmovisor/upgrades/v9/bin/osmosisd version
+$HOME/.osmosisd/cosmovisor/upgrades/v9/bin/osmosisd version
 ```
