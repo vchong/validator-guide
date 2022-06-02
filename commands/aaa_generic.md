@@ -51,3 +51,5 @@ terrad gentx polkachu_terra 1000000uluna \
  --identity "0A6AF02D1557E5B4" \
  --details "Polkachu is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@polkachu.com" \
  --security-contact "hello@polkachu.com"
+
+terrad tx staking delegate terravaloper1rr2g4z2ch4cqwl8s70yj94a5l2vakg0v36nmjh 98000000uluna --from polkachu_terra --node http://localhost:17657 --chain-id phoenix-1

@@ -1,0 +1,3 @@
+terrad tx staking delegate terravaloper1rr2g4z2ch4cqwl8s70yj94a5l2vakg0v36nmjh 98000000uluna --from polkachu_terra --node http://localhost:17657 --chain-id phoenix-1
+
+terrad --node http://localhost:26657 query staking validators --limit 1000 -o json | jq -r '.validators[] | [.operator_address, .status, (.tokens|tonumber / pow(10; 6)), .description.moniker] | @csv' | column -t -s"," | sort -k3 -n -r | nl
