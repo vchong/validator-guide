@@ -1,4 +1,4 @@
-# Osmosis v8.0.0 Upgrade
+# Osmosis v9.0.0 Upgrade
 
 The upgrade is scheduled for block `4707300`. A countdown clock is [here](https://www.mintscan.io/osmosis/blocks/4707300)
 
