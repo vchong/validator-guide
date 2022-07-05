@@ -1,4 +1,4 @@
-# Juno v5.0.1 Upgrade
+# Juno v7.0.0 Upgrade
 
 The Upgrade is scheduled for block `3851750`. A countdown clock is [here](https://www.mintscan.io/juno/blocks/3851750)
 
