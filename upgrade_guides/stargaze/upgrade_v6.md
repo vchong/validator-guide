@@ -1,4 +1,4 @@
-# Gravity v1.5.2
+# Stargaze 6 upgrade
 
 The Upgrade is scheduled for block `3626432`. A countdown clock is [here](https://www.mintscan.io/stargaze/blocks/3626432)
 
