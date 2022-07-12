@@ -8,13 +8,15 @@ We have two nodes: validator Node A and fully-synced non-validator Node B. Both 
 
 ### Best Practice
 
-1. **Stop Node A**: Stop `cosmovisor` service on Node A. Double check the service status to make sure it is off. On block explorer, you should see the validator missing blocks. In addition, we implement two safeguards against unexpected restart. First, we change `priv_validator_key.json` to `priv_validator_key.json.backup` in the `config` folder. Second, we change `cosmovisor.service` to `cosmovisor.service.backup` in the `systemd` folder.
+1. **Double Check**: Double check that we have the correct backup for `priv_validator_key.json`.
 
-2. **Change Validator Role to Node B**: Stop Node B's `cosmovisor` service. Replace Node B's `priv_validator_key.json` with the backup copy from A. Restart B's `cosmovisor` service. Make sure it is making blocks on block explorer.
+1. **Stop Node A**: Stop `cosmovisor` service on Node A. Double check the service status to make sure it is off. On block explorer, you should see the validator missing blocks.
 
-3. **Make Node A the New Non-Validator Node**: Delete `priv_validator_key.json.backup` (created from Step 1) in the `config` folder on Node A. Change `cosmovisor.service.backup` back to `cosmovisor.service` in the `systemd` folder on Node A. Restart Node A's `cosmovisor` service. Because there is no `priv_validator_key.json` on Node A at this moment, the service will create a new copy of priv_validator_key.json. Check logs to make sure that Node A is making blocks.
+1. **Restart Node A As Non-Validator**: Delete `priv_validator_key.json` from Node A and restart `cosmovisor` service. Check 3 places to ensure no double-signing. First, the newly generated `priv_validator_key.json` should be different from the one on the backup. Second, on block explorer, you should see the validator missing blocks. Third, run a `BINARY status` command and make sure to see `VotingPower` as 0.
 
-4. **House Clean**: The specifics only apply to how we set up the cluster. You should adapt according to your setup.
+1. **Change Validator Role to Node B**: Stop Node B's `cosmovisor` service. Replace Node B's `priv_validator_key.json` with the backup copy from A. Restart B's `cosmovisor` service. Make sure it is making blocks on block explorer.
+
+1. **House Clean**: The specifics only apply to how we set up the cluster. You should adapt according to your setup.
    - Swap the server name with "sudo hostname xxx" on each server (for example, between "juno_mainnet" and "juno_mainnet_backup")
    - Swap the server shortcut in ~/.ssh/config file for each ssh login
    - Swap the log name in the promtail.yml file on each server and restart promtail.
