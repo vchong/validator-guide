@@ -1,4 +1,4 @@
-# Terra 2.1.0 upgrade
+# Terra 2.1.1 upgrade
 
 The Upgrade is scheduled for block `890000`. A countdown clock is [here](https://ping.pub/terra2/gov/894)
 
@@ -8,16 +8,16 @@ This guide assumes that you use cosmovisor to manage upgrades
 # get the new version
 cd terra
 git pull
-git checkout v2.1.0
+git checkout v2.1.1
 make install
 ```
 
 # check the version
 
 ```bash
-# should be v2.1.0
+# should be v2.1.1
 terrad version
-# Should be commit beeff192329372e2bb993f897b8c866fd8be917d
+# Should be commit 5b37c3db93dee63d8542d7c4adac77fd521787e7
 terrad version --long
 ```
 
