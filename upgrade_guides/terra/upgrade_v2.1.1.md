@@ -31,6 +31,6 @@ cp $HOME/go/bin/terrad $HOME/.terra/cosmovisor/upgrades/2.1.0/bin
 # check the version again
 
 ```bash
-# should be v2.1.0
+# should be v2.1.1
 $HOME/.terra/cosmovisor/upgrades/2.1.0/bin/terrad version
 ```
