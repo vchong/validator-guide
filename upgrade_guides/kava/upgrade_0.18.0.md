@@ -32,5 +32,5 @@ cp $HOME/go/bin/kava $HOME/.kava/cosmovisor/upgrades/v0.18.0/bin
 
 ```bash
 # should be 1.18.0
-$HOME/.ava/cosmovisor/upgrades/v0.18.0/bin/kava version
+$HOME/.kava/cosmovisor/upgrades/v0.18.0/bin/kava version
 ```
