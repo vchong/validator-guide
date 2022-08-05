@@ -1,4 +1,4 @@
-# Sifchain v0.14.0 Upgrade
+# Sifchain v0.13.6 Upgrade
 
 The Upgrade is scheduled for block `7972597`. A countdown clock is [here](https://www.mintscan.io/sifchain/blocks/7972597)
 
@@ -8,29 +8,29 @@ This guide assumes that you use cosmovisor to manage upgrades
 # get the new version
 cd sifnoded
 git pull
-git checkout v0.14.0
+git checkout v0.13.6
 make install
 ```
 
 # check the version
 
 ```bash
-# should be 0.14.0
+# should be 0.13.6
 sifnoded version
-# Should be commit acb759c474d84eb20f27f98c80d2a6eeab7bee62
+# Should be commit e3baa11f0943294f193adba4b470dd5de53bc573
 sifnoded version --long
 ```
 
 # Make new directory and copy binary
 
 ```bash
-mkdir -p $HOME/.sifnoded/cosmovisor/upgrades/0.14.0/bin
-cp $HOME/go/bin/sifnoded $HOME/.sifnoded/cosmovisor/upgrades/0.14.0/bin
+mkdir -p $HOME/.sifnoded/cosmovisor/upgrades/0.13.6/bin
+cp $HOME/go/bin/sifnoded $HOME/.sifnoded/cosmovisor/upgrades/0.13.6/bin
 ```
 
 # check the version again
 
 ```bash
-# should be 0.14.0
-$HOME/.sifnoded/cosmovisor/upgrades/0.14.0/bin/sifnoded version
+# should be 0.13.6
+$HOME/.sifnoded/cosmovisor/upgrades/0.13.6/bin/sifnoded version
 ```
