@@ -60,3 +60,6 @@ aptos stake set-delegated-voter \
 | public-keys.yaml  | account_public_key          | `PUBLIC_KEY`  |
 
 ## Restart Service
+
+PUBLIC_KEY: 0x9f1362e528f52780dc38d447102cb1a92bea80503b4943be91133415110a5369
+ADDRESS: aec8a97955aaafb2b1609418b5aed1c2b2a8c738472f7788b2fd189f78bbbf26
