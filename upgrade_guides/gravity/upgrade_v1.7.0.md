@@ -33,3 +33,13 @@ cp $HOME/go/bin/gravity $HOME/.gravity/cosmovisor/upgrades/pleiades/bin
 # should be v1.7.0
 $HOME/.gravity/cosmovisor/upgrades/pleiades/bin/gravity version
 ```
+
+# Update gbt
+
+```bash
+wget https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.7.0/gbt
+chmod +x *
+sudo mv * /usr/bin/
+```
+
+And restart orchestrator
