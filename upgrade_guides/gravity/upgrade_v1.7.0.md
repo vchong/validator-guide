@@ -16,8 +16,8 @@ chmod +x $HOME/go/bin/gravity
 ```bash
 # should be v1.7.0
 gravity version
-# Should be commit ???
-gravity version --long
+# Should be commit 24ef98cc629549c7acbfe3f3f45ee7728bd0ad77
+gravity version --long | head
 ```
 
 # Make new directory and copy binary
