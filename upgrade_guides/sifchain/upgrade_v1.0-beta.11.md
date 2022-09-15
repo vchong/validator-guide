@@ -1,6 +1,6 @@
 # Sifchain v1.0-beta.11 Upgrade
 
-The Upgrade is scheduled for block `8367070`. A countdown clock is [here](https://www.mintscan.io/sifchain/blocks/8367070)
+The Upgrade is scheduled for block `8618770`. A countdown clock is [here](https://www.mintscan.io/sifchain/blocks/8618770)
 
 This guide assumes that you use cosmovisor to manage upgrades
 
