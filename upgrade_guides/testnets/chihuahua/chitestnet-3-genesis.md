@@ -28,7 +28,7 @@ chihuahuad init <NAME> --chain-id chitestnet-3
 # Download the genesis
 
 ```bash
-
+https://raw.githubusercontent.com/polkachu/validator-guide/main/upgrade_guides/testnets/chihuahua/genesis.json
 ```
 
 # Ask for Tokens
