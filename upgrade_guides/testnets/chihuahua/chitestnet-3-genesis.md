@@ -25,6 +25,12 @@ chihuahuad version --long
 chihuahuad init <NAME> --chain-id chitestnet-3
 ```
 
+# Download the genesis
+
+```bash
+
+```
+
 # Ask for Tokens
 
 Go to testnet Discord channel and post your address. You will get 1000 stake
