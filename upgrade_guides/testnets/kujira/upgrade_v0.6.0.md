@@ -1,6 +1,6 @@
 # Kujira 0.6.0 Upgrade
 
-The Upgrade is scheduled for block `3750000`. A countdown clock is [here](https://cosmos.mintthemoon.xyz/kujira/gov/53)
+The Upgrade is scheduled for block `3750000`. A countdown clock is [here](https://testnets-cosmos.mintthemoon.xyz/kujira/gov/53)
 
 This guide assumes that you use cosmovisor to manage upgrades
 
