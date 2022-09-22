@@ -1,6 +1,6 @@
 # Umee v3.0.0 upgrade
 
-The Upgrade is scheduled for block `3023282`. A countdown clock is [here](https://www.mintscan.io/umee/blocks/3023282)
+The Upgrade is scheduled for block `3215778`. A countdown clock is [here](https://www.mintscan.io/umee/blocks/3215778)
 
 This guide assumes that you use cosmovisor to manage upgrades
 
