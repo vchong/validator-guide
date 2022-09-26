@@ -23,6 +23,10 @@ evmosd version
 evmosd version --long
 ```
 
+##########
+IMPORTANT: wait for the chain to halt
+##########
+
 # Stop cosmovisor
 
 ```bash
