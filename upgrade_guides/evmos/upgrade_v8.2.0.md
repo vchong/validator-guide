@@ -23,31 +23,16 @@ evmosd version
 evmosd version --long
 ```
 
-##########
-IMPORTANT: wait for the chain to halt
-##########
-
-# Stop cosmovisor
+# Make new directory and copy binary
 
 ```bash
-sudo service cosmovisor stop
-```
-
-# Copy binary to the v8.1.0 folder
-
-```bash
-cp $HOME/go/bin/evmosd $HOME/.evmosd/cosmovisor/upgrades/v8.1.0/bin
+mkdir -p $HOME/.evmosd/cosmovisor/upgrades/v8.2.0/bin
+cp $HOME/go/bin/evmosd $HOME/.evmosd/cosmovisor/upgrades/v8.2.0/bin
 ```
 
 # check the version again
 
 ```bash
 # should be 8.2.0
-$HOME/.evmosd/cosmovisor/upgrades/v8.1.0/bin/evmosd version
-```
-
-# Start cosmovisor
-
-```bash
-sudo service cosmovisor start
+$HOME/.evmosd/cosmovisor/upgrades/v8.2.0/bin/evmosd version
 ```
