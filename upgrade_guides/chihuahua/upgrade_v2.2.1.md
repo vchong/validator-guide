@@ -1,4 +1,4 @@
-# Chihuahua 2.2.1 Upgrade
+# Chihuahua 2.2.2 Upgrade
 
 The Upgrade is scheduled for block `4488444`. A countdown clock is [here](https://www.mintscan.io/chihuahua/blocks/4488444)
 
@@ -8,14 +8,14 @@ This guide assumes that you use cosmovisor to manage upgrades
 # get the new version
 cd chihuahua
 git pull
-git checkout v2.2.1
+git checkout v2.2.2
 make install
 ```
 
 # check the version
 
 ```bash
-# should be v2.2.1
+# should be v2.2.2
 chihuahuad version
 # Should be commit ffe1ed09b770acd9637eadfef941aff48f87b07b
 chihuahuad version --long
@@ -31,6 +31,6 @@ cp $HOME/go/bin/chihuahuad $HOME/.chihuahua/cosmovisor/upgrades/burnmech/bin
 # check the version again
 
 ```bash
-# should be v2.2.1
+# should be v2.2.2
 $HOME/.chihuahua/cosmovisor/upgrades/burnmech/bin/chihuahuad version
 ```
