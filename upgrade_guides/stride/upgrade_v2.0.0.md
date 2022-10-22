@@ -1,5 +1,7 @@
 # Stride v2.0.0 upgrade
 
+The Upgrade is scheduled for block `754555`. A countdown clock is [here](https://www.mintscan.io/stride/blocks/754555)
+
 This guide assumes that you use cosmovisor to manage upgrades
 
 ```bash
