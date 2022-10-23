@@ -6,7 +6,11 @@ This guide assumes that you use cosmovisor to manage upgrades
 
 This upgrade is a major upgrade with some agoric Javascript VM specific procedures. Please follow the [official guide](https://github.com/Agoric/agoric-sdk/wiki/ag0-to-agd-upgrade). You wil install NodeJS, Yarn and the agd binary.
 
+If you have issue installing NodeJS with the official guide because you are on a non-LTS version of Linux and you get an error to the effect of "no longer has a Release file", you can still install it through node version manager. See [here](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04).
+
 # check the version
+
+After agd is installed, check the version
 
 ```bash
 # should be 0.32.2
