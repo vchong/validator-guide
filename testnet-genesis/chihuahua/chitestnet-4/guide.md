@@ -65,7 +65,7 @@ Go to testnet Discord channel and post your address. You will get 10 huahua (or 
 # persistent_peers
 
 ```
-12611137be6f64f9a7fb8977614a5a6f257c1394@65.109.28.219:12956
+69481a41415fe35deceea497d481ce9f6b134eef@65.109.28.219:12956
 ```
 
 # explorer
