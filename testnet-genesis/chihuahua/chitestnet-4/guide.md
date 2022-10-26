@@ -52,7 +52,7 @@ chihuahuad gentx chihuahua_test 100000000uhuahua \
 # Download the genesis
 
 ```bash
-TBD
+https://raw.githubusercontent.com/polkachu/validator-guide/main/testnet-genesis/chihuahua/chitestnet-4/genesis.json
 ```
 
 # Ask for Tokens
