@@ -19,6 +19,9 @@ chihuahuad version
 chihuahuad version --long | grep commit
 ```
 
+# Chain ID
+chitestnet-4
+
 # Initialize with the chain-id
 
 ```bash
