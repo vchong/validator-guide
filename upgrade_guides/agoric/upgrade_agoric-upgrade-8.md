@@ -34,7 +34,7 @@ As a degen validator, we will take the lazy approach and just rename the binary 
 
 ```bash
 mkdir -p $HOME/.agoric/cosmovisor/upgrades/agoric-upgrade-8/bin
-cp /home/ubuntu/go/bin/agd $HOME/.agoric/cosmovisor/upgrades/agoric-upgrade-8/bin/ag0
+cp $HOME/go/bin/agd $HOME/.agoric/cosmovisor/upgrades/agoric-upgrade-8/bin/ag0
 ```
 
 check the version again
