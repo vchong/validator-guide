@@ -183,7 +183,7 @@
         "min_initial_deposit_ratio": "0.000000000000000000"
       },
       "voting_params": {
-        "voting_period": "172800s"
+        "voting_period": "900s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
