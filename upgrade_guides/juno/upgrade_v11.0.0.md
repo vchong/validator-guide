@@ -1,6 +1,6 @@
 # Juno v11.0.0 Upgrade
 
-The Upgrade is scheduled for block `3851750`. A countdown clock is [here](https://www.mintscan.io/juno/blocks/3851750)
+The Upgrade is scheduled for block `5480000`. A countdown clock is [here](https://www.mintscan.io/juno/blocks/5480000)
 
 This guide assumes that you use cosmovisor to manage upgrades
 
