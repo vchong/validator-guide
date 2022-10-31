@@ -17,7 +17,7 @@ make install
 ```bash
 # should be v3.1.0
 chihuahuad version
-# Should be commit ffe1ed09b770acd9637eadfef941aff48f87b07b
+# Should be commit d6e9f55c5d7dbee8c6e2c3e34144a9b81ceae8c7
 chihuahuad version --long | grep commit
 ```
 
