@@ -101,7 +101,7 @@ d423602fc81205388304a9d99d496bcac2feba9d@65.109.70.23:12956
 ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:12956
 ```
 
-## Explorer (Not ready)
+## Explorer
 
 ```
 https://testnet.ping.pub/chihuahua/staking
