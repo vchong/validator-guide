@@ -1,6 +1,6 @@
 # Chihuahua chitestnet-5
 
-Install node
+## Install node
 
 ```bash
 # get the new version
@@ -11,7 +11,7 @@ git checkout v4.1.0
 make install
 ```
 
-# check the version
+## check the version
 
 ```bash
 # should be v4.1.0
@@ -20,18 +20,18 @@ chihuahuad version
 chihuahuad version --long | grep commit
 ```
 
-# Chain ID
+## Chain ID
 
 chitestnet-5
 
-# Initialize with the chain-id
+## Initialize with the chain-id
 
 ```bash
 MONIKER=polkachu # Change it to your moniker
 chihuahuad init $MONIKER --chain-id chitestnet-5
 ```
 
-# For Testnet Leader (PLEASE SKIP THIS SECTION IF YOU ARE NOT LEADER)
+## For Testnet Leader (PLEASE SKIP THIS SECTION IF YOU ARE NOT LEADER)
 
 This section is here for the completion of this guide and for future copy-pasting. You will most likely skip this section.
 
@@ -55,23 +55,23 @@ chihuahuad gentx chihuahua_test 100000000uhuahua \
  --security-contact="hello@polkachu.com"
 ```
 
-# Download the genesis
+## Download the genesis
 
 ```bash
 https://raw.githubusercontent.com/polkachu/validator-guide/main/testnet-genesis/chihuahua/chitestnet-4/genesis.json
 ```
 
-# Ask for Tokens
+## Ask for Tokens
 
 Go to testnet Discord channel and post your address. You will get 10 huahua (or 10,000,000 uhuahua).
 
-# persistent_peers
+## persistent_peers
 
 ```
 69481a41415fe35deceea497d481ce9f6b134eef@65.109.28.219:12956
 ```
 
-# explorer
+## Explorer (Not ready)
 
 ```
 https://testnet.ping.pub/chihuahua/staking
