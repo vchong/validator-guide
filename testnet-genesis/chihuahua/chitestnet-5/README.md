@@ -48,44 +48,29 @@ sed -i 's/"stake"/"uhuahua"/g' ~/.chihuahuad/config/genesis.json
 Second, create a genesis validator and collect genesis
 
 ```bash
-# create key
-chihuahuad keys add chihuahua_test --recover
-VALIDATOR=$(chihuahuad keys show chihuahua_test -a)
+KEY=chihuahua_test
+chihuahuad keys add $KEY --recover
+VALIDATOR=$(chihuahuad keys show $KEY -a)
+COINS="900000000000000uhuahua,100000000000stake,100000000000samoleons"
 
-# create gentx
-coins="900000000000000uhuahua,100000000000stake,100000000000samoleons"
+chihuahuad add-genesis-account $VALIDATOR $COINS
 
-chihuahuad add-genesis-account $VALIDATOR $coins
-
-chihuahuad gentx chihuahua_test 100000000uhuahua \
---chain-id=chitestnet-4 \
---moniker="polkachu.com" \
---commission-max-change-rate=0.01 \
---commission-max-rate=0.20 \
+chihuahuad gentx $KEY 1000000000uhuahua \
+ --chain-id=$CHAINID \
+ --moniker="polkachu.com" \
+ --commission-max-change-rate=0.01 \
+ --commission-max-rate=0.20 \
+ --commission-rate=0.05 \
  --min-self-delegation "1" \
---commission-rate=0.05 \
  --website "https://polkachu.com" \
  --identity "0A6AF02D1557E5B4" \
  --details "Polkachu is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@polkachu.com" \
  --security-contact="hello@polkachu.com"
 
-chihuahuad gentx validator 1000000000uhuahua --chain-id $CHAINID --commission-rate="0.05"
 chihuahuad collect-gentxs
 ```
 
-```bash
-chihuahuad gentx chihuahua_test 100000000uhuahua \
---chain-id=chitestnet-4 \
---moniker="polkachu.com" \
---commission-max-change-rate=0.01 \
---commission-max-rate=0.20 \
- --min-self-delegation "1" \
---commission-rate=0.05 \
- --website "https://polkachu.com" \
- --identity "0A6AF02D1557E5B4" \
- --details "Polkachu is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@polkachu.com" \
- --security-contact="hello@polkachu.com"
-```
+Lastly, start the chain
 
 ## Initialize with the chain-id
 
@@ -97,17 +82,17 @@ chihuahuad init $MONIKER --chain-id chitestnet-5
 ## Download the genesis
 
 ```bash
-https://raw.githubusercontent.com/polkachu/validator-guide/main/testnet-genesis/chihuahua/chitestnet-4/genesis.json
+https://raw.githubusercontent.com/polkachu/validator-guide/main/testnet-genesis/chihuahua/chitestnet-5/genesis.json
 ```
 
 ## Ask for Tokens
 
-Go to testnet Discord channel and post your address. You will get 10 huahua (or 10,000,000 uhuahua).
+Go to testnet Discord channel and post your address. You will get 500 huahua (or 500,000,000 uhuahua) for starting a validator, or more for other purposes.
 
 ## persistent_peers
 
 ```
-69481a41415fe35deceea497d481ce9f6b134eef@65.109.28.219:12956
+73bc3e726cbbaa69230397874cca12ae51949d75@65.109.90.33:26656
 ```
 
 ## Explorer (Not ready)
