@@ -4,6 +4,7 @@ Install node
 
 ```bash
 # get the new version
+git clone https://github.com/ChihuahuaChain/chihuahua
 cd chihuahua
 git pull
 git checkout v4.1.0
@@ -13,25 +14,26 @@ make install
 # check the version
 
 ```bash
-# should be vv4.1.0
+# should be v4.1.0
 chihuahuad version
-# Should be commit 36ee9133360dadfe8f96527442908407fd04abb7
+# Should be commit 49a1b6d8f71bb0e981f6ff0fce5deae63e270324
 chihuahuad version --long | grep commit
 ```
 
 # Chain ID
 
-chitestnet-4
+chitestnet-5
 
 # Initialize with the chain-id
 
 ```bash
-chihuahuad init NAME --chain-id chitestnet-4
+MONIKER=polkachu # Change it to your moniker
+chihuahuad init $MONIKER --chain-id chitestnet-5
 ```
 
-# For Testnet Leader (PLEASE SKIP THIS SECTION)
+# For Testnet Leader (PLEASE SKIP THIS SECTION IF YOU ARE NOT LEADER)
 
-This section is here for the completion of this guide and for my future copy-pasting. You will most likely skip this section.
+This section is here for the completion of this guide and for future copy-pasting. You will most likely skip this section.
 
 First, adjust some params to your liking. For chihuahua, I adjusted denom to uhuahua and gov proposal voting time to 15 minutes.
 
