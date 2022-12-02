@@ -95,6 +95,12 @@ Go to testnet Discord channel and post your address. You will get 500 huahua (or
 73bc3e726cbbaa69230397874cca12ae51949d75@65.109.90.33:26656
 ```
 
+## seeds
+
+```
+ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:12956
+```
+
 ## Explorer (Not ready)
 
 ```
