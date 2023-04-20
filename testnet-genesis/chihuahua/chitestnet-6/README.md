@@ -92,7 +92,7 @@ Go to testnet Discord channel and post your address. You will get 500 huahua (or
 ## persistent_peers
 
 ```
-TBD
+37924aed413e8475caff03be96417b6da89b21a9@65.108.226.183:12956
 ```
 
 ## seeds
